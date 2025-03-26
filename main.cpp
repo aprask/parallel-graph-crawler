@@ -82,7 +82,6 @@ void crawl_parallel(std::string* initial_name, size_t& depth, const size_t& thre
 }
 
 void node_routine(std::unordered_set<std::string>* visited, std::vector<std::string> thread_nodes, std::string url, std::vector<std::string>* next_level) {
-    std::cout << "Thread: " << std::this_thread::get_id() << std::endl;
     std::string out;
     for (std::string thread_node : thread_nodes) {
         out = req_hand(base_url, thread_node);
