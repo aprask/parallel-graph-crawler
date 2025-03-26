@@ -1,0 +1,4 @@
+rm *.o bacon
+g++ -g -c main.cpp -I ~/rapidjson/include
+g++ -o bacon main.o -lcurl
+slurmstepd: error: *** JOB 10074 ON gal-c1 CANCELLED AT 2025-03-25T22:02:19 ***

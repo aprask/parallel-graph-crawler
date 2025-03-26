@@ -1,0 +1,3 @@
+rm *.o bacon
+g++ -g -c main.cpp -I ~/rapidjson/include
+g++ -o bacon main.o -lcurl

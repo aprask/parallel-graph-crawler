@@ -1,0 +1,15 @@
+rm *.o bacon
+rm: cannot remove '*.o': No such file or directory
+rm: cannot remove 'bacon': No such file or directory
+make: *** [Makefile:8: clean] Error 1
+g++ -g -c main.cpp -I ~/rapidjson/include
+g++ -o bacon main.o -lcurl
+/usr/bin/ld: can not read symbols: file truncated
+/usr/bin/ld: .eh_frame/.stab edit: file truncated
+/usr/bin/ld: BFD version 2.35.2-54.el9 internal error, aborting at ../../bfd/merge.c:935 in _bfd_merged_section_offset
+
+/usr/bin/ld: Please report this bug.
+
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: bacon] Error 1
+Build failed. Exiting.
